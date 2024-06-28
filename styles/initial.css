@@ -1,0 +1,55 @@
+:root {
+    --green: hsl(157, 74%, 62%);
+    --white: hsl(0, 0%, 100%);
+    --error: hsl(0, 96%, 61%);
+    --dark-blue: hsl(224, 35%, 11%);
+    --grey: hsl(225, 40%, 83%);
+    --light-blue: hsl(225, 21%, 45%);
+    --blue: hsl(225, 26%, 23%);
+    --button-hover: hsl(157, 100%, 85%);
+
+    --main-w: 100vw;
+}
+
+@font-face {
+    font-family: ChivoLight;
+    src: url('../font/Chivo-Light.ttf');
+}
+
+@font-face {
+    font-family: ChivoBold;
+    src: url('../font/Chivo-Bold.ttf');
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: ChivoLight;
+}
+
+h1{
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+input, button{
+    font-size: 14px;
+    font-family: ChivoBold;
+    border-radius: 28px;
+    color: var(--dark-blue);
+}

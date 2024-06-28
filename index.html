@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pod Request Access Landing Page</title>
+    <link rel="stylesheet" href="styles/initial.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <picture class="bg-1">
+        <source media="(min-width: 925px)" srcset="images/desktop/image-host.jpg">
+        <source media="(min-width: 450px)" srcset="images/tablet/image-host.jpg">
+        <img src="images/mobile/image-host.jpg" alt="host image">
+    </picture>
+
+    <img src="images/desktop/bg-pattern-dots.svg" alt="background pattern" class="bg-2">
+
+    <main>
+        <img src="images/desktop/logo.svg" alt="logo" class="logo">
+
+        <section class="main-section">
+            <h1><span>PUBLISH YOUR PODCASTS</span> EVERYWHERE.</h1>
+            <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+            <section class="flex-section">
+                <form class="form">
+                    <!--learn how to stop default error msg from showing without making input type text-->
+                    <input type="text" id="email" placeholder="Email address">
+                    <label class="error"></label>
+                    <button type="submit">Request Access</button>
+                </form>
+                <div class="icons">
+                    <img src="images/desktop/spotify.svg" alt="spotify">
+                    <img src="images/desktop/apple-podcast.svg" alt="Apple Podcasts">
+                    <img src="images/desktop/google-podcasts.svg" alt="Google Podcasts">
+                    <img src="images/desktop/pocket-casts.svg" alt="Pocket Casts">
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
